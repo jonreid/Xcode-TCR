@@ -14,4 +14,4 @@ if [[ -z $commitMessage ]]; then
    exit 1
 fi
 
-git commit -am "$commitMessage"
+git add . && git commit -m "$commitMessage"
