@@ -6,7 +6,12 @@ TCR stands for "test && commit || revert," a challenging and fun development wor
 - If the tests pass, it commits your changes.
 - If the tests fail, it reverts your changes.
 
-See the original [test && commit || revert](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864) article by Kent Beck.
+## Contents
+
+- [How to Set It Up](#how-to-set-it-up)
+- [What It Does](#what-it-does)
+- [Temporary Bypass](#temporary-bypass)
+- [References](#references)
 
 ## How to Set It Up
 
@@ -19,3 +24,21 @@ Under "Testing Succeeds" scroll down until you see a "Run" option. Select the `t
 Under "Testing Fails" set the "Run" to the `tcr-revert.sh` script.
 
 ![Set behavior for Test Fails to tcr-revert.sh](images/fails.png)
+
+## What It Does
+
+Upon a successful test run, the commit script shows a dialog asking you for a commit message. Enter it and press enter, and it will commit your changes.
+
+If you don't enter a commit message, it will not make a commit.
+
+Upon a test failure, the revert script will revert your changes. It deletes any new files. (Any files ignored by your repo will remain.) And it shows you a dialog to letting you know it did its business.
+
+## Temporary Bypass
+
+To bypass TCR, deselect the Run script in the Testing Fails behaviors. This will keep any changes in place.
+
+You can keep the Run script in place for Testing Succeeds. If you leave the commit message blank, it won't make a commit.
+
+## References
+
+- [test && commit || revert](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864) original article by Kent Beck
