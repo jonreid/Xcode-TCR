@@ -27,9 +27,7 @@ Under "Testing Fails" set the "Run" to the `tcr-revert.sh` script.
 
 ## What It Does
 
-Upon a successful test run, the commit script shows a dialog asking you for a commit message. Enter it and press enter, and it will commit your changes.
-
-If you don't enter a commit message, it will not make a commit.
+Upon a successful test run, the commit script shows a dialog asking you for a commit message. Enter your commit message and press enter, and it will commit your changes.
 
 Upon a test failure, the revert script will revert your changes. It deletes any new files. (Any files ignored by your repo will remain.) And it shows you a dialog to letting you know it did its business.
 
