@@ -6,6 +6,8 @@ TCR stands for "test && commit || revert," a challenging and fun development wor
 - If the tests pass, it commits your changes.
 - If the tests fail, it reverts your changes.
 
+**Note:** This works for Xcode projects and workspaces. It currently doesn't work for Swift packages.
+
 ## Contents
 
 - [How to Set It Up](#how-to-set-it-up)
