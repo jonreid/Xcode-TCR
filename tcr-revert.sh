@@ -7,7 +7,7 @@
 git checkout . && git clean -fd
 
 read -r -d '' applescript <<'EndOfScript'
-   display dialog "Reverted!" with icon 0 buttons {"OK"} default button "OK"
+  display dialog "Reverted!" with icon 0 buttons {"OK"} default button "OK"
 EndOfScript
 
 osascript -e "$applescript"
