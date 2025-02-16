@@ -20,6 +20,7 @@ TCR stands for "test && commit || revert," a challenging and fun development wor
 Clone this repo. Then in Xcode, open Settings and go to the Behaviors tab.
 
 Under "Testing Succeeds" scroll down until you see a "Run" option. Select the `tcr-commit.sh` script.
+If you want it to also push, select `tcr-commit-and-push.sh` instead.
 
 ![Set behavior for Test Succeeds to tcr-commit.sh](images/succeeds.png)
 
