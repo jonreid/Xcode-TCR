@@ -4,7 +4,7 @@
 # Copyright 2023 Jonathan M. Reid. https://github.com/jonreid/TCR-Xcode/blob/main/LICENSE.txt
 # SPDX-License-Identifier: MIT
 
-git restore --staged . && git clean -fd
+git reset --hard && git restore --staged . && git clean -fd
 
 read -r -d '' applescript <<'EndOfScript'
   display dialog "Reverted!" with icon 0 buttons {"OK"} default button "OK"
