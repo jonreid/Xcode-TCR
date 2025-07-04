@@ -9,7 +9,14 @@ TCR stands for "test && commit || revert," a challenging and fun development wor
 **Note:** This works for Xcode projects and workspaces. It currently doesn't work for Swift packages.
 
 <!-- toc -->
-<!-- endToc -->
+## Contents
+
+  * [What It Does](#what-it-does)
+  * [Temporary Bypass](#temporary-bypass)
+  * [TDD Mode](#tdd-mode)
+  * [How to Set It Up](#how-to-set-it-up)
+  * [References](#references)
+  * [About the Author](#about-the-author)<!-- endToc -->
 
 ## What It Does
 
