@@ -10,7 +10,8 @@ if [[ -z $statusResult ]]; then
 fi
 
 read -r -d '' applescript <<'EndOfScript'
-  set commitMessage to text returned of (display dialog "Commit message:" default answer "" buttons {"Commit"} default button "Commit")
+  set instructions to "(Leave empty to cancel)"
+  set commitMessage to text returned of (display dialog instructions default answer "" with title "Commit message:" buttons {"Commit"} default button "Commit")
   return commitMessage
 EndOfScript
 
