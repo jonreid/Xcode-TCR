@@ -34,6 +34,12 @@ Upon a successful test run, the commit script shows a dialog asking you for a co
 
 Upon a test failure, the revert script will revert your changes. It deletes any new files. (Any files ignored by your repo will remain.) And it shows you a dialog to letting you know it did its business.
 
+## TDD Mode
+
+Because the commit and revert scripts are separate, you can choose to use just the commit script.
+This turns the setup into a TDD tool: you can write failing tests and explore solutions freely.
+Commits only happen when tests pass — but failures don’t revert your work.
+
 ## Temporary Bypass
 
 To bypass TCR, deselect the Run script in the Testing Fails behaviors. This will keep any changes in place.
