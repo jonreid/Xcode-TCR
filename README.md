@@ -15,19 +15,6 @@ TCR stands for "test && commit || revert," a challenging and fun development wor
 - [Temporary Bypass](#temporary-bypass)
 - [References](#references)
 
-## How to Set It Up
-
-Clone this repo. Then in Xcode, open Settings and go to the Behaviors tab.
-
-Under "Testing Succeeds" scroll down until you see a "Run" option. Select the `tcr-commit.sh` script.
-If you want it to also push, select `tcr-commit-and-push.sh` instead.
-
-![Set behavior for Test Succeeds to tcr-commit.sh](images/succeeds.png)
-
-Under "Testing Fails" set the "Run" to the `tcr-revert.sh` script.
-
-![Set behavior for Test Fails to tcr-revert.sh](images/fails.png)
-
 ## What It Does
 
 Upon a successful test run, the commit script shows a dialog asking you for a commit message. Enter your commit message and press enter, and it will commit your changes.
@@ -45,6 +32,19 @@ Commits only happen when tests pass — but failures don’t revert your work.
 To bypass TCR, deselect the Run script in the Testing Fails behaviors. This will keep any changes in place.
 
 You can keep the Run script in place for Testing Succeeds. If you leave the commit message blank, it won't make a commit.
+
+## How to Set It Up
+
+Clone this repo. Then in Xcode, open Settings and go to the Behaviors tab.
+
+Under "Testing Succeeds" scroll down until you see a "Run" option. Select the `tcr-commit.sh` script.
+If you want it to also push, select `tcr-commit-and-push.sh` instead.
+
+![Set behavior for Test Succeeds to tcr-commit.sh](images/succeeds.png)
+
+Under "Testing Fails" set the "Run" to the `tcr-revert.sh` script.
+
+![Set behavior for Test Fails to tcr-revert.sh](images/fails.png)
 
 ## References
 
